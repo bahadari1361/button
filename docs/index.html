@@ -1,51 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: transparent;
-      font-family: system-ui, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
+<meta charset="UTF-8">
+<title>Premium Buttons</title>
 
-    .pro-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 14px 26px;
-      background: #0057b8;
-      color: #fff;
-      font-size: 16px;
-      font-weight: 600;
-      border-radius: 12px;
-      text-decoration: none;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
-      transition: 0.2s;
-    }
+<style>
+  body {
+    margin: 0;
+    padding: 40px;
+    background: #f5f6f7;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
 
-    .pro-btn:hover {
-      background: #0b82ff;
-      transform: translateY(-2px);
-      box-shadow: 0 10px 24px rgba(0,0,0,0.22);
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 320px;
+  }
 
-    .icon {
-      font-size: 20px;
-    }
-  </style>
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: 0.2s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #e53935;
+    border-radius: 50%;
+  }
+</style>
 </head>
+
 <body>
+<div class="container">
 
-<a class="pro-btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/techniker/SitePages/TechnikerDashboard.aspx">
-  <span class="icon">🛠️</span>
-  Techniker Dashboard
-</a>
+  <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/DigitalHub">
+    <div class="dot"></div> Startseite
+  </a>
 
+  <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/techniker/SitePages/TechnikerDashboard.aspx">
+    <div class="dot"></div> Techniker Dashboard
+  </a>
+
+  <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/backoffice">
+    <div class="dot"></div> Backoffice Dashboard
+  </a>
+
+  <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/it">
+    <div class="dot"></div> IT & Systeme
+  </a>
+
+  <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/contacts">
+    <div class="dot"></div> Ansprechpartner
+  </a>
+
+</div>
 </body>
 </html>
