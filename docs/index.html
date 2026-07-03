@@ -1,79 +1,77 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Premium Buttons</title>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 40px;
+      height: 100%;
+      background: #f5f6f7;
+      font-family: system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+    }
 
-<style>
-  body {
-    margin: 0;
-    padding: 40px;
-    background: #f5f6f7;
-    font-family: system-ui, sans-serif;
-    display: flex;
-    justify-content: center;
-  }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 320px;
+    }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 320px;
-  }
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      background: #ffffff;
+      border: 1px solid #dcdcdc;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: 0.2s ease;
+    }
 
-  .btn {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px 18px;
-    background: #ffffff;
-    border: 1px solid #dcdcdc;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-    transition: 0.2s ease;
-  }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+    }
 
-  .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.10);
-  }
-
-  .dot {
-    width: 10px;
-    height: 10px;
-    background: #e53935;
-    border-radius: 50%;
-  }
-</style>
+    .dot {
+      width: 10px;
+      height: 10px;
+      background: #e53935;
+      border-radius: 50%;
+    }
+  </style>
 </head>
-
 <body>
-<div class="container">
+  <div class="container">
 
-  <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/DigitalHub">
-    <div class="dot"></div> Startseite
-  </a>
+    <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/DigitalHub">
+      <div class="dot"></div> Startseite
+    </a>
 
-  <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/techniker/SitePages/TechnikerDashboard.aspx">
-    <div class="dot"></div> Techniker Dashboard
-  </a>
+    <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/techniker/SitePages/TechnikerDashboard.aspx">
+      <div class="dot"></div> Techniker Dashboard
+    </a>
 
-  <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/backoffice">
-    <div class="dot"></div> Backoffice Dashboard
-  </a>
+    <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/backoffice">
+      <div class="dot"></div> Backoffice Dashboard
+    </a>
 
-  <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/it">
-    <div class="dot"></div> IT & Systeme
-  </a>
+    <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/it">
+      <div class="dot"></div> IT & Systeme
+    </a>
 
-  <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/contacts">
-    <div class="dot"></div> Ansprechpartner
-  </a>
+    <a class="btn" href="https://wischhusenhaustechnik.sharepoint.com/sites/contacts">
+      <div class="dot"></div> Ansprechpartner
+    </a>
 
-</div>
+  </div>
 </body>
 </html>
